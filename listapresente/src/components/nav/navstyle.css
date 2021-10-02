@@ -1,0 +1,52 @@
+@font-face {
+    font-family: birthstone ;
+    src: url("../font/Birthstone/Birthstone-Regular.ttf");
+}
+
+
+body{
+    margin: 0;
+}
+
+
+
+
+.navPrincipal{
+    height: 70px;
+    background-color:#C6B09F ;
+    
+
+}
+
+.divMenu{
+    display: inline-block;
+    margin-left: 30%;
+    position: absolute;
+    top: 10px;
+    
+}
+
+.menu{
+    display: flex;
+    height: 35px;
+    width: 450px ;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+
+#panela{
+    height: 60px;
+    width: 100px;
+    display: inline;
+}
+
+
+
+.menu span{
+    color: white;
+    font-size: 28px;
+    margin-left: 20px;
+    font-family:  birthstone,"Arial";
+}

@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Navegacao from './components/nav/navegacao';
 
 function App() {
   return (
     <>
+      <Navegacao/>
     </>
   );
 }
