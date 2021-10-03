@@ -20,7 +20,7 @@ body{
 
 .divMenu{
     display: inline-block;
-    margin-left: 30%;
+    margin-left: 25%;
     position: absolute;
     top: 10px;
     
@@ -29,11 +29,11 @@ body{
 .menu{
     display: flex;
     height: 35px;
-    width: 450px ;
+    width: 550px ;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    
+    justify-content: center;
 }
 
 #panela{
@@ -44,9 +44,10 @@ body{
 
 
 
-.menu span{
+.menu a{
     color: white;
     font-size: 28px;
     margin-left: 20px;
     font-family:  birthstone,"Arial";
+    text-decoration: none;
 }

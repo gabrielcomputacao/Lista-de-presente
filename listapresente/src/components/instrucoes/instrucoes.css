@@ -1,0 +1,29 @@
+
+.titulo{
+    text-align: center;
+    color: red;
+    font-size: 28px;
+    
+}
+
+.titulo:first-child{
+    padding: 15px 0px 15px 0px;
+    font-size: 34px;
+
+}
+
+.textoInstrucao{
+    color:black;
+    border: solid 2px #FFF ;
+    font-size: 28px;
+    margin: 10px 20px 10px 20px;
+}
+
+#textoEspecifico{
+    color: white;
+}
+
+.instrucao{
+    background-color: #D7CCC8;
+    margin: 0;   
+}
