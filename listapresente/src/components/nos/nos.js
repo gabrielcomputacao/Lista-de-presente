@@ -7,8 +7,14 @@ class Nos extends Component {
       return (
          <>
             <section id="nos">
-               <div>
+               <h2>Sobre Nós</h2>
+               <div id="imagemNos">
                   <img id="eutata" src={eutata} alt="casal juntos" />
+               </div>
+               <div id="textoNos">
+                  <p>
+                     askdaskljdakljdakldjaslkd
+                  </p>
                </div>
             </section>
          </>

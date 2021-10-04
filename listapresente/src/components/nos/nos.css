@@ -1,4 +1,27 @@
 #eutata{
-    width: 250px;
-    height: 250px;
+    margin-left: 50px;
+    width: 450px;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+#imagemNos{
+    display: inline-block;
+}
+
+#nos{
+    background-color: rgb(224, 179, 164);
+    padding-bottom: 40px;
+}
+
+#nos h2{
+    font-size: 42px;
+    padding: 15px 0 15px 0 ;
+    text-align: center;
+    color: white;
+    font-family: birthstone,"Arial";
+}
+
+#textoNos{
+    display: inline-block;
 }
