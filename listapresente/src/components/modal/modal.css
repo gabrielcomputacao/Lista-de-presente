@@ -2,11 +2,68 @@
     background-color: white;
     display:none;
     position: fixed;
-    width: 300px;
-    height: 300px;
-    left: 200px;
+    width: 800px;
+    height: 600px;
+    left: 25%;
     top: 40px;
     color: black;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+
+.modal h3{
+    font-size: 28px;
+    padding: 5px;
+    text-align: center;
+}
+
+.modal h4{
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+}
+
+.dados{
+    padding: 10px;
+    font-size: 28px;
+    padding-left: 45px;
+}
+
+.dados input{
+    height: 25px ;
+    width: 250px;
+}
+
+.textoAlternativo{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 20px;
+}
+
+#fechar{
+    padding: 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 24px;
+    background-color: lightgreen;
+}
+
+#fechar:hover{
+    background-color: lightskyblue;
+}
+
+#confirmar{
+    padding: 15px;
+    position: absolute;
+    left: 40%;
+    bottom: 40%;
+    font-size: 28px;
+    background-color: lightcoral;
+}
+
+#confirmar:hover{
+    background-color: lightskyblue;
 }
 
 .show{

@@ -12,7 +12,7 @@ class Instrucoes extends Component {
                   <p>
                      Terá várias opções de presentes, voce irá apertar o Botao
                      <span id="textoEspecifico"> VOU PRESENTEAR</span> e colocar seu nome e seu
-                     telefone e apertar em OK, assim o item irá ser marcado e
+                     telefone e apertar em CONFIRMAR, assim o item irá ser marcado e
                      esse item não poderá ser escolhido mais vezes.
                   </p>
                </div>

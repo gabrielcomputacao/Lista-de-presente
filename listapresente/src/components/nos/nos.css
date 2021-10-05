@@ -24,4 +24,23 @@
 
 #textoNos{
     display: inline-block;
+    grid-column: 2;
+    font-size: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+#textoNos p{
+    text-align: justify;
+}
+
+#pensamento{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.divisaoNos{
+    display: grid;
+    grid-column: 2;
 }

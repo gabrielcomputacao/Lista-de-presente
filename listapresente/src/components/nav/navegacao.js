@@ -11,11 +11,12 @@ class Navegacao extends Component {
 
             <div className="divMenu">
                <div className="menu">
-                  <a href="#">Apresentação</a>
+                  
                   {/* <a href="#">Avisos</a> */}
                   <a href="#instrucaoOrientar">Instruções</a>
                   <a href="#nos">Sobre Nós</a>
                   <a href="#presente">Presentes</a>
+                  <a href="#creditos">Créditos</a>
                </div>
             </div>   
             </div>

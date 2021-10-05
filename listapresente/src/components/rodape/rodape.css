@@ -1,0 +1,30 @@
+.rodape{
+    background-color: #C6B09F;
+    font-size: 32px;
+    padding: 10px 0 10px 0;  
+}
+
+.autor{
+    text-align: center;
+    color: white;
+    font-family: birthstone,"Arial";
+    font-size: 38px;
+}
+
+#tel{
+    display: inline-block;
+}
+
+.telefone img{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.email p{
+    display: inline-block;
+}
+
+.email img{
+    padding-left: 15px;
+    padding-right: 15px;
+}
