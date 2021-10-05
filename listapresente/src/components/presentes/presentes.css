@@ -73,3 +73,7 @@
     color: black;
     background-color: lightseagreen;
 }
+
+.show{
+    display: block !important;
+}

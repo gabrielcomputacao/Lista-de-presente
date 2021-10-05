@@ -14,8 +14,8 @@ class Navegacao extends Component {
                   <a href="#">Apresentação</a>
                   {/* <a href="#">Avisos</a> */}
                   <a href="#instrucaoOrientar">Instruções</a>
-                  <a href="#">Sobre Nós</a>
-                  <a href="#">Presentes</a>
+                  <a href="#nos">Sobre Nós</a>
+                  <a href="#presente">Presentes</a>
                </div>
             </div>   
             </div>

@@ -12,6 +12,10 @@
 
 }
 
+.titulo:last-child{
+    padding-bottom: 25px;
+}
+
 .textoInstrucao{
     color:black;
     border: solid 2px #FFF ;
