@@ -53,11 +53,18 @@
     background-color: lightskyblue;
 }
 
+#itens{
+    height: 50px;
+    margin-left: 37%;
+    margin-top: 20px;
+    text-align: center;
+}
+
 #confirmar{
     padding: 15px;
     position: absolute;
     left: 40%;
-    bottom: 40%;
+    bottom: 20%;
     font-size: 28px;
     background-color: lightcoral;
 }

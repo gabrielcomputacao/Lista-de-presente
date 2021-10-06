@@ -50,7 +50,6 @@ class Presentes extends Component {
                         <h4>Secador de cabelo marca Taiff</h4>
                      </div>
                      <div className="presenteBody">
-                        <button  onClick={() => {this.mudandoValor()}}>Vou Presentear</button>
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
@@ -63,7 +62,6 @@ class Presentes extends Component {
                         <h4>Liquidificador </h4>
                      </div>
                      <div className="presenteBody">
-                        <button  onClick={() => {this.mudandoValor()}}>Vou Presentear</button>
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
@@ -78,7 +76,6 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <button  onClick={() => {this.mudandoValor()}}>Vou Presentear</button>
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
@@ -91,7 +88,6 @@ class Presentes extends Component {
                         <h4>Ferro de passar roupa à vapor</h4>
                      </div>
                      <div className="presenteBody">
-                        <button  onClick={() => {this.mudandoValor()}}>Vou Presentear</button>
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
@@ -104,7 +100,6 @@ class Presentes extends Component {
                         <h4>Airfrayer</h4>
                      </div>
                      <div className="presenteBody">
-                        <button  onClick={() => {this.mudandoValor()}}>Vou Presentear</button>
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
@@ -117,7 +112,6 @@ class Presentes extends Component {
                         <h4>Batedeira</h4>
                      </div>
                      <div className="presenteBody">
-                        <button  onClick={() => {this.mudandoValor()}}>Vou Presentear</button>
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
@@ -130,7 +124,6 @@ class Presentes extends Component {
                         <h4>Ventilador</h4>
                      </div>
                      <div className="presenteBody">
-                        <button  onClick={() => {this.mudandoValor()}}>Vou Presentear</button>
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
@@ -143,7 +136,6 @@ class Presentes extends Component {
                         <h4>Sandurcheira/Grill</h4>
                      </div>
                      <div className="presenteBody">
-                        <button  onClick={() => {this.mudandoValor()}}>Vou Presentear</button>
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
@@ -156,7 +148,6 @@ class Presentes extends Component {
                         <h4>Microndas Cor Branca</h4>
                      </div>
                      <div className="presenteBody">
-                        <button  onClick={() => {this.mudandoValor()}}>Vou Presentear</button>
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
@@ -172,7 +163,6 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <button onClick={() => {this.mudandoValor()}}>Vou Presentear</button>
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
@@ -185,7 +175,6 @@ class Presentes extends Component {
                         <h4>MOP giratório</h4>
                      </div>
                      <div className="presenteBody">
-                        <button  onClick={() => {this.mudandoValor()}}>Vou Presentear</button>
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
@@ -200,14 +189,14 @@ class Presentes extends Component {
                            Original 220V
                         </h4>
                      </div>
-                     <div className="presenteBody">
-                        <button onClick={() => {this.mudandoValor()}}>
-                           Vou Presentear
-                        </button>
+                     <div className="presenteBody">    
                         <p>Status:Disponivel</p>
                      </div>
                   </div>
                </div>
+               <button id="acaoPresentar" onClick={() => {this.mudandoValor()}}>
+                           Vou Presentear
+                        </button>
             </section>
             <Modal classeVisivel={this.state.valor} mudarValor={this.mudandoValorNone.bind(this)}/>
          </>

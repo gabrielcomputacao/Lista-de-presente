@@ -1,17 +1,13 @@
-#eutata{
-    margin-left: 50px;
-    width: 450px;
-    height: 450px;
-    margin-bottom: 20px;
-}
 
-#imagemNos{
-    display: inline-block;
-}
 
 #nos{
-    background-color: rgb(224, 179, 164);
+    background-image: url("../images/fotoCasal.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
     padding-bottom: 40px;
+    background-color: #C6B09F;
+    height: 800px;
 }
 
 #nos h2{
@@ -24,15 +20,17 @@
 
 #textoNos{
     display: inline-block;
-    grid-column: 2;
     font-size: 28px;
     padding-left: 10px;
     padding-right: 10px;
     color: white;
+    border: 1px solid;
+    background-color: lightslategrey;
+    margin: 400px 20px 0px 20px;
 }
 
 #textoNos p{
-    text-align: justify;
+    text-align: center;
 }
 
 #pensamento{
@@ -40,7 +38,3 @@
     margin-top: 20px;
 }
 
-.divisaoNos{
-    display: grid;
-    grid-column: 2;
-}

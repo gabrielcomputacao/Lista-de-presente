@@ -1,5 +1,5 @@
 import react, { Component } from "react";
-import eutata from "../images/eutatabh.jpeg";
+import eutata from "../images/fotoCasal.jpeg";
 import "./nos.css";
 
 class Nos extends Component {
@@ -9,9 +9,6 @@ class Nos extends Component {
             <section id="nos">
                <h2>Sobre Nós</h2>
                <div className="divisaoNos">
-                  <div id="imagemNos">
-                     <img id="eutata" src={eutata} alt="casal juntos" />
-                  </div>
                   <div id="textoNos">
                      <p>
                         Tudo começou há seis anos. Enquanto algumas pessoas
