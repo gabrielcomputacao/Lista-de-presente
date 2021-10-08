@@ -1,29 +1,58 @@
-import react, { Component } from "react";
+import react, { Component, useState } from "react";
 import "./modal.css";
+import axios from 'axios';
 
 class Modal extends Component {
    constructor(props) {
       super(props);
       this.state = {
          visivel: "",
+         nome:"",
+         tel:"",
+         item:"",
       };
    }
+
+   handleEnviar = ()=> {
+      
+      this.data={
+         nome:this.state.nome,
+         tel:this.state.tel,
+         item:this.state.item
+      }
+
+      axios.post("http://localhost:3002/create",this.data).
+      then(response =>{
+         console.log("deu certo a requisicao" + response)
+      }).catch(()=>{
+         console.log("erro ao enviar requisicao")
+      });
+
+      this.props.mudarValor();
+   }
+
+
 
    render() {
       return (
          <>
             <div
-               className={`${this.props.classeVisivel} ${this.state.visivel} modal`}
-            >
+               className={`${this.props.classeVisivel} ${this.state.visivel} modal`}>
                <h3>Você irá nos presentear</h3>
                <h4>Agradecemos do fundo do coração!!!</h4>
                <div className="dados">
-                  <label>Seu nome: </label>
-                  <input></input>
+                  <label htmlFor="nome">Seu nome: </label>
+                  <input id="nome" type="text" 
+                  value={this.state.nome}
+                  onChange={(e)=>this.setState({nome:e.target.value})
+                  }></input>
                </div>
                <div className="dados">
-                   <label>Seu telefone: </label>
-                   <input></input>
+                   <label htmlFor="telefone">Seu telefone: </label>
+                   <input id="telefone" type="text"
+                   value={this.state.tel}
+                   onChange={(e)=>this.setState({tel:e.target.value})}>
+                   </input>
                </div>
 
                 <div className="textoAlternativo">Se voce quer presentar o item que você clicou,
@@ -31,7 +60,8 @@ class Modal extends Component {
                 <p>confirme no botão confirmar!!</p></div>
 
 
-               <select id="itens">
+               <select id="itens" value={this.state.item}
+               onChange={(e)=>this.setState({item:e.target.value})}>
                   <option value="1">Secador</option>
                   <option value="2">Liquidificador</option>
                   <option value="3">Jogo de Faca</option>
@@ -46,7 +76,10 @@ class Modal extends Component {
                   <option value="12">Chuveiro Ducha</option>
                </select>
 
-                <button id="confirmar">Confirmar</button>
+                <button id="confirmar" 
+                onClick={()=>{
+                   this.handleEnviar()
+                }}>Confirmar</button>
 
                <button id="fechar"
                   onClick={() => {
