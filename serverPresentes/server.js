@@ -4,6 +4,7 @@ const path = require('path')
 const Sequelize = require('sequelize')
 const db1 = require('mysql2/promise')
 const mysql = require('mysql')
+const routes = require('../serverPresentes/src/routes')
 
 
 //sequelize nao deu certo pois a versao do banco da hostgator era
@@ -45,7 +46,7 @@ const db = mysql.createPool({
 const app = express()
 app.use(cors())
 app.use(express.json())
-
+app.use(routes)
 
 /* app.get('/',function(req,res){
 
