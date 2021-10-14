@@ -5,12 +5,22 @@ import axios from 'axios';
 class Modal extends Component {
    constructor(props) {
       super(props);
+
+      const valorOptionFalse=false;
+      const valorOptionTrue=true
       this.state = {
          visivel: "",
          nome:"",
          tel:"",
          item:"",
+         esconder:"",
+         
       };
+   }
+
+
+   fazerAparecer = ()=>{
+      this.setState({esconder:"ver"})
    }
 
    handleEnviar = ()=> {
@@ -28,10 +38,29 @@ class Modal extends Component {
          console.log("erro ao enviar requisicao")
       });
 
-      this.props.mudarValor();
+      
+      this.fazerAparecer()
+      setTimeout(()=>{
+         this.props.mudarValor();
+      },2000)
+      
    }
 
-  
+  componentDidUpdate(){
+     let selectCampo =document.querySelector('#itens')
+     
+     for(let i=0 ; i <= 12 ; i++){
+        for(let y=0 ; y < this.props.listaItem ; y++){
+           if(selectCampo.options[i].value === this.props.listaItem[y]){
+               selectCampo.options[i].setAttribute("disable",true)
+           }
+        }
+     }
+
+     console.log(selectCampo.options[2])
+
+
+  }
 
 
 
@@ -57,38 +86,37 @@ class Modal extends Component {
                    </input>
                </div>
 
-                <div className="textoAlternativo">Se voce quer presentar o item que você clicou,
+                <div className="textoAlternativo">Se você quer presentar o item que você clicou,
                 <p>Escolha o item entre as opções, depois</p>
                 <p>confirme no botão confirmar!!</p></div>
 
+               {<div className={`${this.state.esconder} confirmacao`}>
+                  <span>Seu Presente foi computado com Sucesso!!</span>
+               </div>}
 
                <select id="itens" value={this.state.item}
                onChange={(e)=>this.setState({item:e.target.value})}>
-                  <option value="1">Secador</option>
-                  <option value="2">Liquidificador</option>
-                  <option value="3">Jogo de Faca</option>
-                  <option value="4">Ferro de passar roupa</option>
-                  <option value="5">Airfrayer</option>
-                  <option value="6">Batedeira</option>
-                  <option value="7">Ventilador</option>
-                  <option value="8">Sanduicheira/Grill</option>
-                  <option value="9">Microondas</option>
-                  <option value="10">Jogo de talheres</option>
-                  <option value="11">MOP Giratorio</option>
-                  <option value="12">Chuveiro Ducha</option>
+                  <option  value="1">Secador</option>
+                  <option  value="2">Liquidificador</option>
+                  <option  value="3">Jogo de Faca</option>
+                  <option  value="4">Ferro de passar roupa</option>
+                  <option  value="5">Airfrayer</option>
+                  <option  value="6">Batedeira</option>
+                  <option  value="7">Ventilador</option>
+                  <option  value="8">Sanduicheira/Grill</option>
+                  <option  value="9">Microondas</option>
+                  <option  value="10">Jogo de talheres</option>
+                  <option  value="11">MOP Giratorio</option>
+                  <option  value="12">Chuveiro Ducha</option>
                </select>
 
                 <button id="confirmar" 
                 onClick={()=>{
                    this.handleEnviar()
-                   this.props.capturarItem(this.state.item)
+                   
                 }}>Confirmar</button>
 
-                <button onClick={()=>{
-                   /* this.handleSelect() */
-                }}>
-                   atualizar
-                </button>
+                
 
                <button id="fechar"
                   onClick={() => {

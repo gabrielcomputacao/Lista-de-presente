@@ -1,5 +1,5 @@
 .modal{
-    background-color: white;
+    background-color: rgb(211, 211, 248);
     display:none;
     position: fixed;
     width: 800px;
@@ -79,4 +79,18 @@
 
 .naoVisivel{
     display: none  !important;
+}
+
+.confirmacao{
+    display: none;
+    text-align: center;
+    font-size: 28px;
+    color:black;
+    background-color: rgb(201, 236, 148);
+}
+
+
+.ver{
+    display: inline-block !important;
+    margin-left: 20%;
 }

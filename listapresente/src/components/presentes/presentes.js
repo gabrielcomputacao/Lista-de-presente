@@ -13,68 +13,78 @@ import micro from "../images/micro.jpg";
 import faqueiro from "../images/faqueiro.jpg";
 import mop from "../images/mop.jpg";
 import chuveiro from "../images/chuveiro.jpg";
-import axios from "axios"
+import axios from "axios";
 
 class Presentes extends Component {
+   constructor() {
+      super();
 
-   constructor(){
-      super()
+      this.state = {
+         valor: "",
+         numeroItem: "",
+      };
+   }
+
+   /* mudandoNumeroItem = (valor) => {
+      this.setState({ numeroItem: valor });
+   }; */
+
+   mudandoValor() {
+      this.setState(() => ({
+         valor: "show",
+      }));
+   }
+
+   mudandoValorNone = () => {
+      this.setState(() => ({
+         valor: "",
+      }));
+   };
+
+   capturandoItens = (valores) => {
+      this.setState({ numeroItem: valores });
+   };
+
+   handleSelect = () => {
+      axios
+         .get("http://localhost:3002/api/select")
+         .catch(() => {
+            console.log("erro na solicitacao e requisicao");
+         })
+         .then((result) => {
+            /* console.log(result.data) */
+            this.capturandoItens(result.data);
+         });
+   };
+
+   componentDidMount() {
+      this.handleSelect();
+   }
+
+   verificandoStatus = () => {
+
+        
+         for(let i = 0 ; i < this.state.numeroItem.length ; i++){
+            for(let x =0 ; x <= 12 ; x++){
+               if(x === this.state.numeroItem[i]){
+                  
+                  console.log(`campo${x}`)
+                  let capturarItem = document.querySelector(`#campo${x}`)
+                  capturarItem.innerHTML = 'Indisponivel'
+                  console.log(capturarItem)
+               }
+            }
+         }
       
-      this.state={
-         valor:"",
-         numeroItem:"",
-      } 
-   }
 
-   mudandoNumeroItem=(valor)=>{
-      this.setState({numeroItem:valor})
-   }
+      
 
-
-   mudandoValor(){
-      this.setState(()=>({
-         valor:"show"
-      }))
-   }
-
-   mudandoValorNone=()=>{
-      this.setState(()=>({
-         valor:""
-      }))
-   }
-
-   capturandoItens = (valores)=>{
-      this.setState({numeroItem:valores})
-   }
-
-
-   handleSelect = ()=>{  
-      axios.get("http://localhost:3002/api/select").
-      catch(()=>{
-         console.log('erro na solicitacao e requisicao')
-      }).then(result =>{
-         /* console.log(result.data) */
-         this.capturandoItens(result.data)  
-      }) 
-   }
-
-   componentDidMount(){
-      this.handleSelect()  
-   }
-
-   
-   testando = ()=>{
-      let um=1
-       let campo=document.querySelector(`#campo${um}`)
-       campo.innerHTML="indisponivel"
-   }
-
+   };
 
    render() {
       return (
          <>
             <section id="presente">
-               
                <h1>Presentes</h1>
                <div className="presenteMain">
                   <div className="figuraPresente">
@@ -86,7 +96,9 @@ class Presentes extends Component {
                         <h4>Secador de cabelo marca Taiff</h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo1">Status:Disponivel</p>
+                        <p className="itensStatus" id="campo1">
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                   <div className="figuraPresente">
@@ -98,7 +110,9 @@ class Presentes extends Component {
                         <h4>Liquidificador </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo2">Status:Disponivel</p>
+                        <p className="itensStatus" id="campo2">
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                   <div className="figuraPresente">
@@ -112,7 +126,9 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo3">Status:Disponivel</p>
+                        <p className="itensStatus" id="campo3">
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                   <div className="figuraPresente">
@@ -124,7 +140,9 @@ class Presentes extends Component {
                         <h4>Ferro de passar roupa à vapor</h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo4">Status:Disponivel</p>
+                        <p className="itensStatus" id="campo4">
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                   <div className="figuraPresente">
@@ -136,7 +154,9 @@ class Presentes extends Component {
                         <h4>Airfrayer</h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo5">Status:Disponivel</p>
+                        <p className="itensStatus" id="campo5">
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                   <div className="figuraPresente">
@@ -148,7 +168,9 @@ class Presentes extends Component {
                         <h4>Batedeira</h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo6">Status:Disponivel</p>
+                        <p className="itensStatus" id="campo6">
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                   <div className="figuraPresente">
@@ -160,7 +182,10 @@ class Presentes extends Component {
                         <h4>Ventilador</h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo7">  Status:Disponivel</p>
+                        <p className="itensStatus" id="campo7">
+                           {" "}
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                   <div className="figuraPresente">
@@ -172,7 +197,9 @@ class Presentes extends Component {
                         <h4>Sandurcheira/Grill</h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo8">Status:Disponivel</p>
+                        <p className="itensStatus" id="campo8">
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                   <div className="figuraPresente">
@@ -184,7 +211,9 @@ class Presentes extends Component {
                         <h4>Microndas Cor Branca</h4>
                      </div>
                      <div className="presenteBody">
-                        <p  className="itensStatus"id="campo9">Status:Disponivel</p>
+                        <p className="itensStatus" id="campo9">
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                   <div className="figuraPresente">
@@ -199,7 +228,9 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo10">Status:Disponivel</p>
+                        <p className="itensStatus" id="campo10">
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                   <div className="figuraPresente">
@@ -211,7 +242,9 @@ class Presentes extends Component {
                         <h4>MOP giratório</h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo11">Status:Disponivel</p>
+                        <p className="itensStatus" id="campo11">
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                   <div className="figuraPresente">
@@ -225,23 +258,37 @@ class Presentes extends Component {
                            Original 220V
                         </h4>
                      </div>
-                     <div className="presenteBody">    
-                        <p className="itensStatus" id="campo12">Status:Disponivel</p>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo12">
+                           Status:Disponivel
+                        </p>
                      </div>
                   </div>
                </div>
-               <button id="acaoPresentar" onClick={() => {this.mudandoValor()}}>
-                           Vou Presentear
-                        </button>
-            </section>
-            <button onClick={()=>{
-               this.testando()
-            }}>APerte</button>
+               <button
+                  id="acaoPresentar"
+                  onClick={() => {
+                     this.mudandoValor();
+                  }}
+               >
+                  Vou Presentear
+               </button>
 
-            <Modal classeVisivel={this.state.valor} mudarValor={this.mudandoValorNone.bind(this)}
-            capturarItem={this.mudandoNumeroItem}/>
-            
-            
+               <button
+               id="acaoPresentar"
+                  onClick={() => {
+                     this.verificandoStatus();
+                  }}
+               >
+                  Atualizar 
+               </button>
+            </section>
+
+            <Modal
+               classeVisivel={this.state.valor}
+               mudarValor={this.mudandoValorNone.bind(this)}
+               listaItem={this.state.numeroItem}
+            />
          </>
       );
    }
