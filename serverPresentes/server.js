@@ -3,7 +3,7 @@ const cors = require('cors')
 const path = require('path')
 const Sequelize = require('sequelize')
 const db1 = require('mysql2/promise')
-const mysql = require('mysql')
+
 const routes = require('../serverPresentes/src/routes')
 
 
@@ -33,12 +33,7 @@ sequelize.authenticate().then(()=>{
 
 connect() */
 
-const db = mysql.createPool({
-    host:'108.167.168.75',
-    user:"prog1185_poder",
-    password:'gabriel123',
-    database:'prog1185_testando'
-})
+
 
 
 
@@ -59,18 +54,7 @@ app.use(routes)
 }) */
 
 
-app.post('/create',(req,res)=>{
-    const {nome,tel,item} = req.body;
 
-    let sql = "INSERT INTO presentes(nome,telefone,item) values (?,?,?)";
-
-
-    db.query(sql,[nome,tel,item],(err,result)=>{
-        console.log(err)
-    })
-
-    
-})
 
 app.listen(3002,function(){
     console.log("server escutando na porta 3002")

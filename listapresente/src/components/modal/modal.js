@@ -21,7 +21,7 @@ class Modal extends Component {
          item:this.state.item
       }
 
-      axios.post("http://localhost:3002/create",this.data).
+      axios.post("http://localhost:3002/api/create",this.data).
       then(response =>{
          console.log("deu certo a requisicao" + response)
       }).catch(()=>{
@@ -30,6 +30,8 @@ class Modal extends Component {
 
       this.props.mudarValor();
    }
+
+  
 
 
 
@@ -56,7 +58,7 @@ class Modal extends Component {
                </div>
 
                 <div className="textoAlternativo">Se voce quer presentar o item que você clicou,
-                <p>Escolho o item entre as opções depois</p>
+                <p>Escolha o item entre as opções, depois</p>
                 <p>confirme no botão confirmar!!</p></div>
 
 
@@ -79,7 +81,14 @@ class Modal extends Component {
                 <button id="confirmar" 
                 onClick={()=>{
                    this.handleEnviar()
+                   this.props.capturarItem(this.state.item)
                 }}>Confirmar</button>
+
+                <button onClick={()=>{
+                   /* this.handleSelect() */
+                }}>
+                   atualizar
+                </button>
 
                <button id="fechar"
                   onClick={() => {
