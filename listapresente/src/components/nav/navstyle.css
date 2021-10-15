@@ -13,9 +13,13 @@ body{
 
 .navPrincipal{
     height: 70px;
-    background-color:#C6B09F ;
+    background-color:var(--cor-verde-escuro);
     
 
+}
+
+#iconMenu{
+    display: none;
 }
 
 .divMenu{
@@ -59,3 +63,45 @@ body{
     border-radius: 4px;
     background-color: white;
 }
+
+
+
+@media screen and (max-width:992px){
+    
+    .divMenu{
+        margin-left: 18%;
+    }
+
+    .menu{
+        width: 450px;
+    }
+    
+    .menu a{
+        color: white;
+        font-size: 32px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .menu{
+        display: none;
+    }
+
+    #iconMenu{
+        display: inline-block;
+        color: white;
+        margin-left: 80px;
+        height: 54px;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    #iconMenu{
+        
+        margin-left: 10px;
+        
+    }
+}
+

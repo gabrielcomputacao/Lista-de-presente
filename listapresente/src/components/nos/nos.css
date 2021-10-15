@@ -5,9 +5,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
-    padding-bottom: 40px;
-    background-color: #C6B09F;
+    background-color: var(--cor-rosa-claro);
     height: 800px;
+    
 }
 
 #nos h2{
@@ -20,15 +20,18 @@
 
 #textoNos{
     display: inline-block;
-    font-size: 28px;
+    font-size: 38px;
+    font-family: birthstone;
     padding-left: 10px;
     padding-right: 10px;
     color: white;
-    border: 1px solid;
-    background-color: lightslategrey;
-    margin: 400px 20px 0px 20px;
+    background-color: var(--cor-verde-claro);
 }
 
+
+#invi{
+    height: 400px;
+}
 #textoNos p{
     text-align: center;
 }

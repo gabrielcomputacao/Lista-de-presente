@@ -46,3 +46,23 @@ table {
     font-family: birthstone ;
     src: url("./components/font/Birthstone/Birthstone-Regular.ttf");
 }
+
+
+:root{
+	--cor-verde-escuro: #08725F;
+	--cor-rosa-claro:#EBC1CA;
+	--cor-rosa-escuro:#F4B9E4;
+	--cor-verde-claro:#7EA092;
+
+}
+
+/* 
+	
+480px // Extra small screen.
+768px // Small screen.
+992px // Medium screen.
+1200px // Large screen.
+1600px // Extra Large screen.
+1900px // Extra Large screen.
+
+*/

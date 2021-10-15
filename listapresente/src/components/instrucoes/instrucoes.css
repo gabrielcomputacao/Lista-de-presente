@@ -1,8 +1,9 @@
 
 .titulo{
     text-align: center;
-    color: red;
-    font-size: 28px;
+    color:var(--cor-verde-escuro);
+    font-size: 38px;
+    font-family: birthstone;
     
 }
 
@@ -18,16 +19,22 @@
 
 .textoInstrucao{
     color:black;
-    border: solid 2px #FFF ;
-    font-size: 28px;
+    font-size: 38px;
     margin: 10px 20px 10px 20px;
+    font-family: birthstone;
 }
 
-#textoEspecifico{
-    color: white;
-}
+
 
 .instrucao{
-    background-color: #D7CCC8;
+    background-color: var(--cor-rosa-claro);
     margin: 0;   
+}
+
+
+@media screen and (max-width:992px){
+    .textoInstrucao{
+        font-size: 32px;
+        text-align: justify;
+    }
 }

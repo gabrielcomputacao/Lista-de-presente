@@ -9,6 +9,7 @@ class Nos extends Component {
             <section id="nos">
                <h2>Sobre Nós</h2>
                <div className="divisaoNos">
+                  <div id="invi"></div>
                   <div id="textoNos">
                      <p>
                         Tudo começou há seis anos. Enquanto algumas pessoas
