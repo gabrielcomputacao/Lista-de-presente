@@ -49,16 +49,16 @@ class Modal extends Component {
   componentDidUpdate(){
      let selectCampo =document.querySelector('#itens')
      
-     for(let i=0 ; i <= 12 ; i++){
-        for(let y=0 ; y < this.props.listaItem ; y++){
-           if(selectCampo.options[i].value === this.props.listaItem[y]){
-               selectCampo.options[i].setAttribute("disable",true)
+     for(let i=0 ; i < this.props.listaItem.length ; i++){
+        for(let y=0 ; y < 12 ; y++){
+           if(selectCampo.options[y].value == this.props.listaItem[i]){
+               selectCampo.options[y].setAttribute("disabled",true)
            }
         }
      }
 
-     console.log(selectCampo.options[2])
-
+    /*  console.log(selectCampo.options[2])
+     console.log(this.props.listaItem.length) */
 
   }
 

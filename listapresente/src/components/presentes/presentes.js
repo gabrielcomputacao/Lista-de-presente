@@ -52,7 +52,7 @@ class Presentes extends Component {
             console.log("erro na solicitacao e requisicao");
          })
          .then((result) => {
-            /* console.log(result.data) */
+             /* console.log(result.data)  */
             this.capturandoItens(result.data);
          });
    };
@@ -68,10 +68,10 @@ class Presentes extends Component {
             for(let x =0 ; x <= 12 ; x++){
                if(x === this.state.numeroItem[i]){
                   
-                  console.log(`campo${x}`)
+                  /* console.log(`campo${x}`) */
                   let capturarItem = document.querySelector(`#campo${x}`)
                   capturarItem.innerHTML = 'Indisponivel'
-                  console.log(capturarItem)
+                  /* console.log(capturarItem) */
                }
             }
          }
