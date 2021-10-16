@@ -55,7 +55,7 @@ class Presentes extends Component {
 
    handleSelect = () => {
       axios
-         .get("http://localhost:3002/api/select")
+         .get("http://18.228.193.152:3002/api/select")
          .catch(() => {
             console.log("erro na solicitacao e requisicao");
          })
