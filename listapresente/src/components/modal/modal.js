@@ -50,7 +50,7 @@ class Modal extends Component {
      let selectCampo =document.querySelector('#itens')
      
      for(let i=0 ; i < this.props.listaItem.length ; i++){
-        for(let y=0 ; y < 12 ; y++){
+        for(let y=0 ; y < 18 ; y++){
            if(selectCampo.options[y].value == this.props.listaItem[i]){
                selectCampo.options[y].setAttribute("disabled",true)
            }
@@ -96,18 +96,24 @@ class Modal extends Component {
 
                <select id="itens" value={this.state.item}
                onChange={(e)=>this.setState({item:e.target.value})}>
-                  <option  value="1">Secador</option>
-                  <option  value="2">Liquidificador</option>
-                  <option  value="3">Jogo de Faca</option>
-                  <option  value="4">Ferro de passar roupa</option>
-                  <option  value="5">Airfrayer</option>
-                  <option  value="6">Batedeira</option>
-                  <option  value="7">Ventilador</option>
-                  <option  value="8">Sanduicheira/Grill</option>
-                  <option  value="9">Microondas</option>
-                  <option  value="10">Jogo de talheres</option>
-                  <option  value="11">MOP Giratorio</option>
-                  <option  value="12">Chuveiro Ducha</option>
+                  <option  value="1">Kit Banheiro Lavabo</option>
+                  <option  value="2">Garfo p/ petisco</option>
+                  <option  value="3">2 lixeiras Redondas</option>
+                  <option  value="4">Escorredor de pratos</option>
+                  <option  value="5">Tapetes cozinha</option>
+                  <option  value="6">kit Churrasco</option>
+                  <option  value="7">Kit Ferramentas</option>
+                  <option  value="8">Queijeira Petit</option>
+                  <option  value="9">Kit Taça de Cerveja</option>
+                  <option  value="10">Fruteira de Chao</option>
+                  <option  value="11">Travessa Inox</option>
+                  <option  value="12">Secador de Cabelo</option>
+                  <option  value="13">Jogo de Facas</option>
+                  <option  value="14">Bacia para roupas</option>
+                  <option  value="15">Batedeira eletrica</option>
+                  <option  value="16">Espremedor de Frutas</option>
+                  <option  value="17">Jarra de Flor</option>
+                  <option  value="18">Churrasqueira Portatil</option>
                </select>
 
                 <button id="confirmar" 

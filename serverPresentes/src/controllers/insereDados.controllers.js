@@ -19,8 +19,7 @@ module.exports={
         
         
             const respostaQuery=db.query(sql,[nome,tel,item],(err,result)=>{
-                console.log(err)
-                return err
+                if(err) throw err;
             })
         
             

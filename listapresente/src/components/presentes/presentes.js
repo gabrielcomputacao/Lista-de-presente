@@ -73,12 +73,12 @@ class Presentes extends Component {
 
         
          for(let i = 0 ; i < this.state.numeroItem.length ; i++){
-            for(let x =0 ; x <= 12 ; x++){
+            for(let x =0 ; x < 19 ; x++){
                if(x === this.state.numeroItem[i]){
                   
                   /* console.log(`campo${x}`) */
                   let capturarItem = document.querySelector(`#campo${x}`)
-                  capturarItem.innerHTML = 'Indisponivel'
+                  capturarItem.innerHTML = 'Status: Indisponivel'
                   /* console.log(capturarItem) */
                }
             }
@@ -281,7 +281,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo12">
+                        <p className="itensStatus" id="campo13">
                            Status:Disponivel
                         </p>
                      </div>
@@ -297,7 +297,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo12">
+                        <p className="itensStatus" id="campo14">
                            Status:Disponivel
                         </p>
                      </div>
@@ -313,7 +313,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo12">
+                        <p className="itensStatus" id="campo15">
                            Status:Disponivel
                         </p>
                      </div>
@@ -329,7 +329,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo12">
+                        <p className="itensStatus" id="campo16">
                            Status:Disponivel
                         </p>
                      </div>
@@ -345,7 +345,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo12">
+                        <p className="itensStatus" id="campo17">
                            Status:Disponivel
                         </p>
                      </div>
@@ -361,7 +361,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo12">
+                        <p className="itensStatus" id="campo18">
                            Status:Disponivel
                         </p>
                      </div>
