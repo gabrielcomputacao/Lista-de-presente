@@ -1,13 +1,14 @@
 .rodape{
-    background-color: #C6B09F;
+    background-color: var(--cor-verde-escuro);
     font-size: 32px;
-    padding: 10px 0 10px 0;  
+    padding: 10px 0 10px 0; 
+    font-family: birthstone,"Arial";
+    color: white;
+    width: 100%;
 }
 
 .autor{
     text-align: center;
-    color: white;
-    font-family: birthstone,"Arial";
     font-size: 38px;
 }
 
@@ -27,4 +28,22 @@
 .email img{
     padding-left: 15px;
     padding-right: 15px;
+}
+
+@media screen and (max-width:768px){
+    .rodape{
+        font-size: 26px;
+    }
+    .autor{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .rodape{
+        font-size: 22px;
+    }
+    .autor{
+        font-size: 26px;
+    }
 }

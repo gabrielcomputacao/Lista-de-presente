@@ -1,19 +1,27 @@
 import React, { Component } from "react";
 import Modal from "../modal/modal";
 import "./presentes.css";
-import secador from "../images/secadorTaif.jpg";
-import liquidificador from "../images/liquidificador.jpg";
-import facas from "../images/facas.jpg";
-import ferro from "../images/ferro.jpg";
-import air from "../images/arfrayer.jpg";
-import batedeira from "../images/batedeira.jpg";
-import ventilador from "../images/ventilador.jpg";
-import misteira from "../images/misteira.jpg";
-import micro from "../images/micro.jpg";
-import faqueiro from "../images/faqueiro.jpg";
-import mop from "../images/mop.jpg";
-import chuveiro from "../images/chuveiro.jpg";
 import axios from "axios";
+
+import lavabo from "../images/imagensItens/lavabo.jpg";
+import garfinho from "../images/imagensItens/garfinho.jpg";
+import lixo from "../images/imagensItens/lixo.png";
+import escorredor from "../images/imagensItens/escorredor.jpeg";
+import tapeteC from "../images/imagensItens/tapeteCozinha.jpg";
+import churras from "../images/imagensItens/churras.jpg";
+import ferramenta from "../images/imagensItens/ferramenta.jpg";
+import queijeira from "../images/imagensItens/queijeira.jpg";
+import taca from "../images/imagensItens/taca.jpg";
+import fruteira from "../images/imagensItens/fruteira.jpg";
+import travessa from "../images/imagensItens/travessa.jpg";
+import secador from "../images/imagensItens/secador.jpg";
+import faca from "../images/imagensItens/faca.jpg";
+import bacia from "../images/imagensItens/bacia.jpg";
+import batedeira from "../images/imagensItens/batedeira.jpg";
+import espremedor from "../images/imagensItens/espremedor.png";
+import jarra from "../images/imagensItens/jarra.jpg";
+import churrasq from "../images/imagensItens/churrasq.jpg";
+
 
 class Presentes extends Component {
    constructor() {
@@ -89,11 +97,11 @@ class Presentes extends Component {
                <div className="presenteMain">
                   <div className="figuraPresente">
                      <figure>
-                        <img src={secador} alt="secador de cabelo"></img>
+                        <img src={lavabo} alt="kit lavabo"></img>
                      </figure>
                      <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      <div className="presenteHead">
-                        <h4>Secador de cabelo marca Taiff</h4>
+                        <h4>1 Kit Banheiro Lavabo Cerâmica</h4>
                      </div>
                      <div className="presenteBody">
                         <p className="itensStatus" id="campo1">
@@ -103,11 +111,11 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={liquidificador} alt="secador de cabelo"></img>
+                        <img src={garfinho} alt="petiscos"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
-                        <h4>Liquidificador </h4>
+                        <h4>JOGO 6 GARFOS P/PETISCO </h4>
                      </div>
                      <div className="presenteBody">
                         <p className="itensStatus" id="campo2">
@@ -117,12 +125,12 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={facas} alt="secador de cabelo"></img>
+                        <img src={lixo} alt="2 Lixeira Redonda Pedal"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
                         <h4>
-                           Jogo De Facas Faqueiro Aço Inox 9 Pçs Tramontina
+                              2 Lixeira Redonda Pedal 6,5
                         </h4>
                      </div>
                      <div className="presenteBody">
@@ -133,11 +141,11 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={ferro} alt="secador de cabelo"></img>
+                        <img src={escorredor} alt="Escorredor De Pratos Louças"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
-                        <h4>Ferro de passar roupa à vapor</h4>
+                        <h4>Escorredor De Pratos Louças</h4>
                      </div>
                      <div className="presenteBody">
                         <p className="itensStatus" id="campo4">
@@ -147,11 +155,11 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={air} alt="arfrayer"></img>
+                        <img src={tapeteC} alt="Tapetes e passadeira de tear cozinha"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
-                        <h4>Airfrayer</h4>
+                        <h4>Tapetes e passadeira de tear cozinha</h4>
                      </div>
                      <div className="presenteBody">
                         <p className="itensStatus" id="campo5">
@@ -161,11 +169,11 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={batedeira} alt="batedeira"></img>
+                        <img src={churras} alt="kit churrasco"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
-                        <h4>Batedeira</h4>
+                        <h4>kit churrasco</h4>
                      </div>
                      <div className="presenteBody">
                         <p className="itensStatus" id="campo6">
@@ -175,11 +183,11 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={ventilador} alt="ventilador"></img>
+                        <img src={ferramenta} alt="Kit Jogo Ferramentas com 149 Peças"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
-                        <h4>Ventilador</h4>
+                        <h4>Kit Jogo Ferramentas com 149 Peças</h4>
                      </div>
                      <div className="presenteBody">
                         <p className="itensStatus" id="campo7">
@@ -190,11 +198,11 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={misteira} alt="Misteira"></img>
+                        <img src={queijeira} alt="Queijeira Petit"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
-                        <h4>Sandurcheira/Grill</h4>
+                        <h4>Queijeira Petit</h4>
                      </div>
                      <div className="presenteBody">
                         <p className="itensStatus" id="campo8">
@@ -204,11 +212,11 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={micro} alt="Microondas"></img>
+                        <img src={taca} alt="Taça de Cerveja kit 6"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
-                        <h4>Microndas Cor Branca</h4>
+                        <h4>Taça de Cerveja kit 6</h4>
                      </div>
                      <div className="presenteBody">
                         <p className="itensStatus" id="campo9">
@@ -218,13 +226,12 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={faqueiro} alt="talher"></img>
+                        <img src={fruteira} alt="Fruteira de chão"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
                         <h4>
-                           Jogo de talher Tramontina Facas;Garfos;
-                           Colheres;Garfo sobremesa;Colherer chá
+                           Fruteira de chão
                         </h4>
                      </div>
                      <div className="presenteBody">
@@ -235,11 +242,11 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={mop} alt="talher"></img>
+                        <img src={travessa} alt="Travessa inox"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
-                        <h4>MOP giratório</h4>
+                        <h4>Travessa inox</h4>
                      </div>
                      <div className="presenteBody">
                         <p className="itensStatus" id="campo11">
@@ -249,13 +256,108 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={chuveiro} alt="talher"></img>
+                        <img src={secador} alt="secador de cabelo Taiff"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
                         <h4>
-                           Chuveiro Ducha Lorenzetti Loren Shower Eletrônico
-                           Original 220V
+                           Secador de cabelo Taiff
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo12">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={faca} alt="Jogo De Facas Aço"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           Jogo De Facas Aço
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo12">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={bacia} alt=" bacia para roupas"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                              bacia para roupas
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo12">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={batedeira} alt="batedeira elétrica"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           batedeira elétrica
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo12">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={espremedor} alt="Espremedor de fruta elétrico"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           Espremedor de fruta elétrico
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo12">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={jarra} alt=" jarra para flor artificial"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           jarra para flor artificial
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo12">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={churrasq} alt="churrasqueira portátil"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           churrasqueira portátil
                         </h4>
                      </div>
                      <div className="presenteBody">

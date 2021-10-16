@@ -1,5 +1,5 @@
 #presente{
-    background-color: darkkhaki;
+    background-color: var(--cor-rosa-claro);
 }
 
 #presente h1{
@@ -49,7 +49,7 @@
 }
 
 .presenteHead{
-    border: 2px solid red;
+  
     padding: 5px;
     margin: 5px;
     text-align: center;

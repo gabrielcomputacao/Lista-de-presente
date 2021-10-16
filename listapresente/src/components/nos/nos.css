@@ -4,9 +4,9 @@
     background-image: url("../images/fotoCasal.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: 80%;
     background-color: var(--cor-rosa-claro);
-    height: 800px;
+    /* height: 800px; */
     
 }
 
@@ -20,7 +20,7 @@
 
 #textoNos{
     display: inline-block;
-    font-size: 38px;
+    font-size: 34px;
     font-family: birthstone;
     padding-left: 10px;
     padding-right: 10px;
@@ -41,3 +41,41 @@
     margin-top: 20px;
 }
 
+
+@media screen and (max-width:992px) {
+    #invi{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #invi{
+        height: 150px;
+    }
+
+    #textoNos{
+        font-size: 24px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:560px) {
+    #invi{
+        background-image:url("../images/fotoCasal.jpeg");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 80%;
+    }
+
+    #nos{
+        background-image:none;
+    }
+
+    #textaoAmor{
+        display: none;
+    }
+    #textoNos{
+        width: 98%;
+        
+    }
+}

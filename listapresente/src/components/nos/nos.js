@@ -11,7 +11,7 @@ class Nos extends Component {
                <div className="divisaoNos">
                   <div id="invi"></div>
                   <div id="textoNos">
-                     <p>
+                     <p id="textaoAmor">
                         Tudo começou há seis anos. Enquanto algumas pessoas
                         fazem de tudo para se tornarem marcantes, outras agem
                         naturalmente e conquistam com muita intensidade. E foi
