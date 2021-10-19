@@ -6,21 +6,34 @@ import axios from "axios";
 import lavabo from "../images/imagensItens/lavabo.jpg";
 import garfinho from "../images/imagensItens/garfinho.jpg";
 import lixo from "../images/imagensItens/lixo.png";
-import escorredor from "../images/imagensItens/escorredor.jpeg";
+import escorredor from "../images/imagensItens/escorredorNew.jpg";
 import tapeteC from "../images/imagensItens/tapeteCozinha.jpg";
 import churras from "../images/imagensItens/churras.jpg";
 import ferramenta from "../images/imagensItens/ferramenta.jpg";
 import queijeira from "../images/imagensItens/queijeira.jpg";
-import taca from "../images/imagensItens/taca.jpg";
+import taca from "../images/imagensItens/tacaBreja.jpg";
 import fruteira from "../images/imagensItens/fruteira.jpg";
 import travessa from "../images/imagensItens/travessa.jpg";
 import secador from "../images/imagensItens/secador.jpg";
-import faca from "../images/imagensItens/faca.jpg";
+import faca from "../images/imagensItens/facaNew.jpg";
 import bacia from "../images/imagensItens/bacia.jpg";
 import batedeira from "../images/imagensItens/batedeira.jpg";
 import espremedor from "../images/imagensItens/espremedor.png";
 import jarra from "../images/imagensItens/jarra.jpg";
 import churrasq from "../images/imagensItens/churrasq.jpg";
+import lixeiraPreta from "../images/imagensItens/lixeiraPreta.jpg";
+import colcha from "../images/imagensItens/colcha.jpg";
+import faqueiro from "../images/imagensItens/faqueiro.jpg";
+import lencol from "../images/imagensItens/lencol.jpg";
+import luva from "../images/imagensItens/luva.jpg";
+import martini from "../images/imagensItens/martini.jpg";
+import saia from "../images/imagensItens/saia.jpg";
+import tapeteBanho from "../images/imagensItens/tapeteBanho.jpg";
+import termometro from "../images/imagensItens/termometro.jpg";
+import tapeteEntrada from "../images/imagensItens/tapeteEntrada.jpg";
+import travessaCeramica from "../images/imagensItens/travessaCeramica.jpg";
+import processador from "../images/imagensItens/processador.jpeg";
+
 
 
 class Presentes extends Component {
@@ -73,7 +86,7 @@ class Presentes extends Component {
 
         
          for(let i = 0 ; i < this.state.numeroItem.length ; i++){
-            for(let x =0 ; x < 19 ; x++){
+            for(let x =0 ; x < 31 ; x++){
                if(x === this.state.numeroItem[i]){
                   
                   /* console.log(`campo${x}`) */
@@ -101,7 +114,7 @@ class Presentes extends Component {
                      </figure>
                      <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      <div className="presenteHead">
-                        <h4>1 Kit Banheiro Lavabo Cerâmica</h4>
+                        <h4> Kit Banheiro Lavabo Cerâmica , sabonete e escova</h4>
                      </div>
                      <div className="presenteBody">
                         <p className="itensStatus" id="campo1">
@@ -159,7 +172,7 @@ class Presentes extends Component {
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
                      <div className="presenteHead">
-                        <h4>Tapetes e passadeira de tear cozinha</h4>
+                        <h4>Tapetes e passadeira de tear cozinha, cor preta ou azul marinho</h4>
                      </div>
                      <div className="presenteBody">
                         <p className="itensStatus" id="campo5">
@@ -277,7 +290,7 @@ class Presentes extends Component {
                      </figure>
                      <div className="presenteHead">
                         <h4>
-                           Jogo De Facas Aço
+                           jogo de facas Tramontina
                         </h4>
                      </div>
                      <div className="presenteBody">
@@ -366,6 +379,199 @@ class Presentes extends Component {
                         </p>
                      </div>
                   </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={colcha} alt="colcha"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                        colcha para cama box casal L: 1,38 cm  C:1,88cm  A: 0,56 cm
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo19">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={faqueiro} alt="faqueiro"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                        Faqueiro jogo de talheres Tramontina Aço Inox
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo20">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={travessaCeramica} alt="travessa"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           Travessa de Ceramica
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo21">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={lencol} alt="lençol"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           lençol para cama box casal 30cm
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo22">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={lixeiraPreta} alt="lixeira preta"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           Lixeira com pedal 30 Litros - cor preta
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo23">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={luva} alt="luva"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           luva térmica e descanso de panela
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo24">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={martini} alt="martini"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           taças de drinks
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo25">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={processador} alt="processador"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           mini processador de alimentos
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo26">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={saia} alt="saia"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           saia para box casal
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo27">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={tapeteBanho} alt="tapete para banho"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           Tapete para Banho
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo28">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={tapeteEntrada} alt="tapete para entrada"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           tapete para entrada
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo29">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+                  <div className="figuraPresente">
+                     <figure>
+                        <img src={termometro} alt="termometro"></img>
+                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
+                     </figure>
+                     <div className="presenteHead">
+                        <h4>
+                           termometro digital
+                        </h4>
+                     </div>
+                     <div className="presenteBody">
+                        <p className="itensStatus" id="campo30">
+                           Status:Disponivel
+                        </p>
+                     </div>
+                  </div>
+
                </div>
                <button
                   id="acaoPresentar"

@@ -83,3 +83,16 @@
 .show{
     display: block !important;
 }
+
+
+@media screen and (max-width:560px){
+    .presenteHead h4{
+        font-size: 12px;   
+    }
+}
+
+@media screen and (max-width:480px){
+    .presenteHead h4{
+        font-size: 5px;   
+    }
+}

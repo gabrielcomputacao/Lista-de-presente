@@ -50,7 +50,7 @@ class Modal extends Component {
      let selectCampo =document.querySelector('#itens')
      
      for(let i=0 ; i < this.props.listaItem.length ; i++){
-        for(let y=0 ; y < 18 ; y++){
+        for(let y=0 ; y < 30 ; y++){
            if(selectCampo.options[y].value == this.props.listaItem[i]){
                selectCampo.options[y].setAttribute("disabled",true)
            }
@@ -114,6 +114,18 @@ class Modal extends Component {
                   <option  value="16">Espremedor de Frutas</option>
                   <option  value="17">Jarra de Flor</option>
                   <option  value="18">Churrasqueira Portatil</option>
+                  <option  value="19">Colcha</option>
+                  <option  value="20">Faqueiro</option>
+                  <option  value="21">Travessa Ceramica</option>
+                  <option  value="22">Lençol</option>
+                  <option  value="23">Lixeira Preta</option>
+                  <option  value="24">Luva Termica</option>
+                  <option  value="25">Taça Drink</option>
+                  <option  value="26">Processador Alimentos</option>
+                  <option  value="27">Saia cama box</option>
+                  <option  value="28">Tapete Banheiro</option>
+                  <option  value="29">Tapete Entrada</option>
+                  <option  value="30">Termometro Digital</option>
                </select>
 
                 <button id="confirmar" 

@@ -1,4 +1,5 @@
 
+import Aviso from './components/avisos/aviso';
 import Instrucoes from './components/instrucoes/instrucoes';
 
 import Navegacao from './components/nav/navegacao';
@@ -17,7 +18,8 @@ function App() {
       <Navegacao/>
       <Instrucoes/>
       <Nos/>
-      <Presentes/> 
+      <Presentes/>
+      <Aviso/>
       <Rodape/>    
     </>
   );

@@ -1,0 +1,23 @@
+.avisar{
+    background-color: var(--cor-verde-claro);
+    font-size: 28px;
+    text-align: justify;
+    padding: 10px;
+    font-family: birthstone;
+    color: white;
+}
+
+.alertando{
+    padding-top: 10px;
+}
+
+.alertando:hover{
+    color: red;
+}
+
+@media screen and (max-width:560px){
+    .avisar{
+        font-size: 20px;
+
+    }
+}
