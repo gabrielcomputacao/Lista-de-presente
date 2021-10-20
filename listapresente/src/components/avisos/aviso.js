@@ -7,7 +7,7 @@ class Aviso extends Component {
    render() {
       return (
          <>
-            <div className="avisar">
+            <div id="avisando" className="avisar">
                <p>
                   Endereço para envio dos presentes: Será entregue no dia do
                   evento, mas, caso queira entregar antecipadamente, segue os

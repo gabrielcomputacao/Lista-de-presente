@@ -5,22 +5,22 @@ class Instrucoes extends Component {
    render() {
       return (
          <>
-         <section id="instrucaoOrientar">
-            <div className="instrucao">
-               <h2 className="titulo">Instruções</h2>
-               <div className="textoInstrucao">
-                  <p>
-                     Terá várias opções de presentes, voce irá apertar o Botão
-                     <span id="textoEspecifico"> VOU PRESENTEAR</span> e colocar seu nome e seu
-                     telefone e apertar em CONFIRMAR, assim o item irá ser marcado e
-                     esse item não poderá ser escolhido mais vezes.
-                  </p>
+            <section id="instrucaoOrientar">
+               <div className="instrucao">
+                  <h2 className="titulo">Instruções</h2>
+                  <div className="textoInstrucao">
+                     <p>
+                        Você irá visualizar diversas opções de presentes. Após a
+                        escola, aperte "VOU PRESENTEAR" e coloque seu nome e
+                        telefone, depois, aperte CONFIRMAR. Assim, o item será
+                        marcado e não poderá ser escolhido por outras pessoas.
+                     </p>
+                  </div>
+                  <h3 className="titulo">
+                     Pense bem antes de selecionar um item: ele será marcado e
+                     ficará desabilitado para os demais!!
+                  </h3>
                </div>
-               <h3 className="titulo">
-                  Pense bem antes de escolher um item ele será marcado e ficará
-                  desabilitado para os demais!!
-               </h3>
-            </div>
             </section>
          </>
       );

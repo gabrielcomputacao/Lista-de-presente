@@ -6,22 +6,22 @@ import axios from "axios";
 import lavabo from "../images/imagensItens/lavabo.jpg";
 import garfinho from "../images/imagensItens/garfinho.jpg";
 import lixo from "../images/imagensItens/lixo.png";
-import escorredor from "../images/imagensItens/escorredorNew.jpg";
+import escorredor from "../images/imagensItens/escorredor1.jpg";
 import tapeteC from "../images/imagensItens/tapeteCozinha.jpg";
 import churras from "../images/imagensItens/churras.jpg";
 import ferramenta from "../images/imagensItens/ferramenta.jpg";
 import queijeira from "../images/imagensItens/queijeira.jpg";
-import taca from "../images/imagensItens/tacaBreja.jpg";
+/* import taca from "../images/imagensItens/tacaBreja.jpg"; */
 import fruteira from "../images/imagensItens/fruteira.jpg";
 import travessa from "../images/imagensItens/travessa.jpg";
 import secador from "../images/imagensItens/secador.jpg";
 import faca from "../images/imagensItens/facaNew.jpg";
 import bacia from "../images/imagensItens/bacia.jpg";
 import batedeira from "../images/imagensItens/batedeira.jpg";
-import espremedor from "../images/imagensItens/espremedor.png";
+/* import espremedor from "../images/imagensItens/espremedor.png"; */
 import jarra from "../images/imagensItens/jarra.jpg";
 import churrasq from "../images/imagensItens/churrasq.jpg";
-import lixeiraPreta from "../images/imagensItens/lixeiraPreta.jpg";
+import lixeiraPreta from "../images/imagensItens/lixeiraP.png";
 import colcha from "../images/imagensItens/colcha.jpg";
 import faqueiro from "../images/imagensItens/faqueiro.jpg";
 import lencol from "../images/imagensItens/lencol.jpg";
@@ -29,8 +29,8 @@ import luva from "../images/imagensItens/luva.jpg";
 import martini from "../images/imagensItens/martini.jpg";
 import saia from "../images/imagensItens/saia.jpg";
 import tapeteBanho from "../images/imagensItens/tapeteBanho.jpg";
-import termometro from "../images/imagensItens/termometro.jpg";
-import tapeteEntrada from "../images/imagensItens/tapeteEntrada.jpg";
+import termometro from "../images/imagensItens/termometroNew.jpg";
+import tapeteEntrada from "../images/imagensItens/tapeteEnt.jpg";
 import travessaCeramica from "../images/imagensItens/travessaCeramica.jpg";
 import processador from "../images/imagensItens/processador.jpeg";
 
@@ -68,7 +68,7 @@ class Presentes extends Component {
 
    handleSelect = () => {
       axios
-         .get("http://18.228.193.152:3002/api/select")
+         .get("http://localhost:3002/api/select")
          .catch(() => {
             console.log("erro na solicitacao e requisicao");
          })
@@ -86,7 +86,7 @@ class Presentes extends Component {
 
         
          for(let i = 0 ; i < this.state.numeroItem.length ; i++){
-            for(let x =0 ; x < 31 ; x++){
+            for(let x =0 ; x < 29 ; x++){
                if(x === this.state.numeroItem[i]){
                   
                   /* console.log(`campo${x}`) */
@@ -225,20 +225,6 @@ class Presentes extends Component {
                   </div>
                   <div className="figuraPresente">
                      <figure>
-                        <img src={taca} alt="Taça de Cerveja kit 6"></img>
-                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
-                     </figure>
-                     <div className="presenteHead">
-                        <h4>Taça de Cerveja kit 6</h4>
-                     </div>
-                     <div className="presenteBody">
-                        <p className="itensStatus" id="campo9">
-                           Status:Disponivel
-                        </p>
-                     </div>
-                  </div>
-                  <div className="figuraPresente">
-                     <figure>
                         <img src={fruteira} alt="Fruteira de chão"></img>
                         <figcaption>Imagem de exemplo - ilustrativa</figcaption>
                      </figure>
@@ -248,7 +234,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo10">
+                        <p className="itensStatus" id="campo9">
                            Status:Disponivel
                         </p>
                      </div>
@@ -262,7 +248,7 @@ class Presentes extends Component {
                         <h4>Travessa inox</h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo11">
+                        <p className="itensStatus" id="campo10">
                            Status:Disponivel
                         </p>
                      </div>
@@ -278,7 +264,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo12">
+                        <p className="itensStatus" id="campo11">
                            Status:Disponivel
                         </p>
                      </div>
@@ -294,7 +280,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo13">
+                        <p className="itensStatus" id="campo12">
                            Status:Disponivel
                         </p>
                      </div>
@@ -310,7 +296,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo14">
+                        <p className="itensStatus" id="campo13">
                            Status:Disponivel
                         </p>
                      </div>
@@ -326,23 +312,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo15">
-                           Status:Disponivel
-                        </p>
-                     </div>
-                  </div>
-                  <div className="figuraPresente">
-                     <figure>
-                        <img src={espremedor} alt="Espremedor de fruta elétrico"></img>
-                        <figcaption>Imagem de exemplo - ilustrativa</figcaption>
-                     </figure>
-                     <div className="presenteHead">
-                        <h4>
-                           Espremedor de fruta elétrico
-                        </h4>
-                     </div>
-                     <div className="presenteBody">
-                        <p className="itensStatus" id="campo16">
+                        <p className="itensStatus" id="campo14">
                            Status:Disponivel
                         </p>
                      </div>
@@ -358,7 +328,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo17">
+                        <p className="itensStatus" id="campo15">
                            Status:Disponivel
                         </p>
                      </div>
@@ -374,7 +344,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo18">
+                        <p className="itensStatus" id="campo16">
                            Status:Disponivel
                         </p>
                      </div>
@@ -390,7 +360,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo19">
+                        <p className="itensStatus" id="campo17">
                            Status:Disponivel
                         </p>
                      </div>
@@ -406,7 +376,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo20">
+                        <p className="itensStatus" id="campo18">
                            Status:Disponivel
                         </p>
                      </div>
@@ -422,7 +392,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo21">
+                        <p className="itensStatus" id="campo19">
                            Status:Disponivel
                         </p>
                      </div>
@@ -438,7 +408,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo22">
+                        <p className="itensStatus" id="campo20">
                            Status:Disponivel
                         </p>
                      </div>
@@ -454,7 +424,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo23">
+                        <p className="itensStatus" id="campo21">
                            Status:Disponivel
                         </p>
                      </div>
@@ -470,7 +440,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo24">
+                        <p className="itensStatus" id="campo22">
                            Status:Disponivel
                         </p>
                      </div>
@@ -486,7 +456,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo25">
+                        <p className="itensStatus" id="campo23">
                            Status:Disponivel
                         </p>
                      </div>
@@ -502,7 +472,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo26">
+                        <p className="itensStatus" id="campo24">
                            Status:Disponivel
                         </p>
                      </div>
@@ -518,7 +488,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo27">
+                        <p className="itensStatus" id="campo25">
                            Status:Disponivel
                         </p>
                      </div>
@@ -534,7 +504,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo28">
+                        <p className="itensStatus" id="campo26">
                            Status:Disponivel
                         </p>
                      </div>
@@ -550,7 +520,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo29">
+                        <p className="itensStatus" id="campo27">
                            Status:Disponivel
                         </p>
                      </div>
@@ -566,7 +536,7 @@ class Presentes extends Component {
                         </h4>
                      </div>
                      <div className="presenteBody">
-                        <p className="itensStatus" id="campo30">
+                        <p className="itensStatus" id="campo28">
                            Status:Disponivel
                         </p>
                      </div>

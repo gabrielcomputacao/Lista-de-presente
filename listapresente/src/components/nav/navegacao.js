@@ -16,7 +16,7 @@ class Navegacao extends Component {
                   </a>
                   
                   <div className="menu">
-                     {<a href="#">Avisos</a>}
+                     {<a href="#avisando">Avisos</a>}
                      <a href="#instrucaoOrientar">Instruções</a>
                      <a href="#nos">SobreNós</a>
                      <a href="#presente">Presentes</a>

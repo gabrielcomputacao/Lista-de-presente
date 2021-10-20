@@ -31,7 +31,7 @@ class Modal extends Component {
          item:this.state.item
       }
 
-      axios.post("http://18.228.193.152:3002/api/create",this.data).
+      axios.post("http://localhost:3002/api/create",this.data).
       then(response =>{
          console.log("deu certo a requisicao" + response)
       }).catch(()=>{
@@ -50,7 +50,7 @@ class Modal extends Component {
      let selectCampo =document.querySelector('#itens')
      
      for(let i=0 ; i < this.props.listaItem.length ; i++){
-        for(let y=0 ; y < 30 ; y++){
+        for(let y=0 ; y < 28 ; y++){
            if(selectCampo.options[y].value == this.props.listaItem[i]){
                selectCampo.options[y].setAttribute("disabled",true)
            }
@@ -104,28 +104,26 @@ class Modal extends Component {
                   <option  value="6">kit Churrasco</option>
                   <option  value="7">Kit Ferramentas</option>
                   <option  value="8">Queijeira Petit</option>
-                  <option  value="9">Kit Taça de Cerveja</option>
-                  <option  value="10">Fruteira de Chao</option>
-                  <option  value="11">Travessa Inox</option>
-                  <option  value="12">Secador de Cabelo</option>
-                  <option  value="13">Jogo de Facas</option>
-                  <option  value="14">Bacia para roupas</option>
-                  <option  value="15">Batedeira eletrica</option>
-                  <option  value="16">Espremedor de Frutas</option>
-                  <option  value="17">Jarra de Flor</option>
-                  <option  value="18">Churrasqueira Portatil</option>
-                  <option  value="19">Colcha</option>
-                  <option  value="20">Faqueiro</option>
-                  <option  value="21">Travessa Ceramica</option>
-                  <option  value="22">Lençol</option>
-                  <option  value="23">Lixeira Preta</option>
-                  <option  value="24">Luva Termica</option>
-                  <option  value="25">Taça Drink</option>
-                  <option  value="26">Processador Alimentos</option>
-                  <option  value="27">Saia cama box</option>
-                  <option  value="28">Tapete Banheiro</option>
-                  <option  value="29">Tapete Entrada</option>
-                  <option  value="30">Termometro Digital</option>
+                  <option  value="9">Fruteira de Chao</option>
+                  <option  value="10">Travessa Inox</option>
+                  <option  value="11">Secador de Cabelo</option>
+                  <option  value="12">Jogo de Facas</option>
+                  <option  value="13">Bacia para roupas</option>
+                  <option  value="14">Batedeira eletrica</option>
+                  <option  value="15">Jarra de Flor</option>
+                  <option  value="16">Churrasqueira Portatil</option>
+                  <option  value="17">Colcha</option>
+                  <option  value="18">Faqueiro</option>
+                  <option  value="19">Travessa Ceramica</option>
+                  <option  value="20">Lençol</option>
+                  <option  value="21">Lixeira Preta</option>
+                  <option  value="22">Luva Termica</option>
+                  <option  value="23">Taça Drink</option>
+                  <option  value="24">Processador Alimentos</option>
+                  <option  value="25">Saia cama box</option>
+                  <option  value="26">Tapete Banheiro</option>
+                  <option  value="27">Tapete Entrada</option>
+                  <option  value="28">Termometro Digital</option>
                </select>
 
                 <button id="confirmar" 
