@@ -31,7 +31,7 @@ class Modal extends Component {
          item:this.state.item
       }
 
-      axios.post("http://localhost:3002/api/create",this.data).
+      axios.post("http://18.228.193.152:3002/api/create",this.data).
       then(response =>{
          console.log("deu certo a requisicao" + response)
       }).catch(()=>{
